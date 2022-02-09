@@ -1,0 +1,177 @@
+html{
+    font-size: 18px;
+    font-family: Outfit, sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.pagelayout{
+    min-width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardcontainer{
+    background-color: hsl(216, 50%, 16%);
+    height: 560px;
+    width: 340px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 5px 5px 40px 2px rgba(0, 0, 0, 0.2);
+    margin: 50px;
+    color: hsl(216, 26%, 56%);    
+}
+
+.imagecontainer{
+    background-image: url(images/image-equilibrium.jpg);
+    background-size: contain;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    margin: 20px;
+    transition: 1s;
+}
+
+.coloroverlay{
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 12px;
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.coloroverlay:hover{
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.icondisplay{
+    position: absolute;
+    top: 128px;
+    left: 126px;
+    opacity: 0;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.imagecontainer:hover .icondisplay{
+    opacity:1;
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+    text-align: left;
+    margin: 0;
+    margin-left:22px;
+    font-size: 1.2rem;
+}
+
+h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+
+}
+
+.caption{
+    text-align: left;
+    margin: 0;
+    margin: 12px 22px;
+    font-weight: 300;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 23px 0 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.ethereum{
+    display: flex;
+    align-items: center;
+}
+
+.ethereum p{
+    color: hsl(178, 100%, 50%);
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+#ethereumicon{
+    height: 16.39px;
+    width: 10px;
+}
+
+.timeleft{
+    display: flex;
+    align-items: center;
+}
+
+.timeleft p{
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+#clockicon{
+    height: 14px;
+    width: 14px;
+
+}
+
+.nametag{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    margin-top: 10px;
+}
+
+.avatar{
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.nametag p{
+    display: inline-block;
+    font-size: 0.75rem;
+    margin-left: 15px;
+}
+
+.nametag a{
+    color: white;
+
+}
+
+.nametag a:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+footer{
+    color: white;
+    font-size: 0.8em;
+    margin-top: 15px;
+    text-align: center; 
+}
+
+a{
+    color: hsl(178, 100%, 50%);
+    text-decoration: none;
+}
+
+a:hover{
+    color: hsl(178, 48%, 74%);
+}
